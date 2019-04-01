@@ -14,6 +14,7 @@ Date::Japanese::Era::Table::Builder::build_table(
     ["\x{5927}\x{6B63}", 'taishou', 1912,  7, 31],
     ["\x{662D}\x{548C}", 'shouwa',  1926, 12, 26],
     ["\x{5E73}\x{6210}", 'heisei',  1989,  1,  8],
+    ["\x{4EE4}\x{548C}", 'reiwa',   2019,  5,  1],
 );
 
 my $era = Date::Japanese::Era->new(1912,7,30);
@@ -26,5 +27,5 @@ ok($era->name eq "\x{5927}\x{6B63}", 'Taisho\'s first day is Taisho');
 
 $era = Date::Japanese::Era->new(3000,1,1);
 
-ok($era->name eq "\x{5E73}\x{6210}", 'Heisei rules into the far future');
+ok($era->name eq "\x{4EE4}\x{548C}", 'Reiwa rules into the far future');
 
